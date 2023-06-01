@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> EJERCICIO 2</title>
+    </head>
+    <!--Cree un formulario donde se ingrese un dato y se muestre si es un número par o impar. (25 pts)-->
+    <body><!--BOTONES-->
+        <p id="Ingreso de datos">INGRESO DE DATOS</p>
+        <input type="text" id="numero"/><button>NUMERO</button><br>
+        <input type="text" id="resultado" disabled/>
+        <input type="button" value="Calcular" id="compras" onclick="Calcular()"/>
+
+
+
+    </body>
+
+
+
+
+<script>
+var numero = 0;
+numero = prompt('Indique un número: ', '');
+if((numero % 2) == 0){
+  console.log(numero + ' es par');
+}else{
+  console.log(numero + ' es impar');
+}
+</script> 
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCICIO 1</title>
+</head>
+<body id="color">   
+<!--Cree un formulario de ingreso de datos de un producto: solicitando el precio, nombre y cantidad de unidades. 
+    mostrando en la parte inferior del formulario el precio total, poniendo un color diferente.
+Suba el archivo html en ésta area. (25 pts)--> 
+
+<p id="Ingreso de datos">INGRESO DE DATOS</p>
+            <input type="text" id="precio"/><button>PRECIO</button><br>
+            <input type="text" id="producto"/><button>PRODUCTO</button><br>
+            <input type="text" id="cantidad"/><button>CANTIDAD</button><br>
+            <input type="text" id="resultado" disabled/>
+            <input type="button" value="Calcular" id="compras" onclick="Calcular()"/>
+</body>
+<script>
+    function Calcular (){
+            let precio = parseFloat(document.getElementById("precio").value);
+            let producto = parseFloat(document.getElementById("producto").value);
+            let cantidad = parseFloat(document.getElementById("cantidad").value);
+            let resultado =precio*cantidad;
+            document.getElementById("resultado").value=resultado;
+            let boton = document.getElementById("compras");
+            boton.addEventListener("mouseover", cambiarColor(),true);}
+
+    function cambiarColor(){
+            document.getElementById("color").style.backgroundColor="blue";
+            alert("cambio de color");}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</html>
